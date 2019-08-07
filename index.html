@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/timeline.css">
 
     <!-- Fontawesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -48,6 +49,16 @@
       .section-title {
         margin-bottom: 80px;
       }
+      .typewritter-text {
+        color: yellow;
+      }
+      
+      .yellow-link:hover {
+        color: yellow;
+      }
+      .blue-text {
+        color: blue;
+      }
       .container-footer {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -71,44 +82,48 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Me</a>
+            <a class="nav-link active" href="#">Yo</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skills">Habilidades</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="#education">Educación</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
   
     <div class="container-fluid bg-0 text-center">
-      <h2>Who Am I?</h2>
       <img src="img/avatar.jpg" class="img-responsive rounded-circle" alt="avatar">   
       <br><br>
   
-      <h1>
-          <p class="typewrite text-warning" data-period="2000" data-type='[ "Hi, I am Lázaro Amor.", "I am creative.", "I Love design.", "I Love to develop." ]'>
-            <span class="wrap"></span>
-          </a>
-        </h1>
+      <h1 class="typewritter-text">
+        <p class="typewrite" data-period="1500" data-type='[ "Hola, soy Lázaro.", "Soy creativo.", "Me encanta el diseño.", "Me apasiona el desarrollo web." ]'>
+          <span class="wrap"></span>
+        </a>
+      </h1>
     </div>
 
-    <div class="container-fluid bg-2 text-center">
-    <h1>Hi there!</h1>
-    <p>I am Lázaro Amor, computer science student from Murcia.</p>
-    <a href="#" class="btn btn-light btn-lg" role="button">
-        <i class="fas fa-search"></i> Search
-    </a>
+    <!-- Hello -->
+    <div class="container-fluid bg-2 text-center" id="hello">
+      <div class="container">
+        <h1 class="jumbotron-heading">¡Hola!</h1>
+          <p class="lead">Soy <b>Lázaro Amor</b> estudiante de ingeniería informática en la <a class="yellow-link" href="https://www.um.es">Universidad de Murcia</a>.
+          Amante de la tecnología en general desde que era niño.
+          Apasionado por el diseño y desarrollo de tecnologías web, así como del emprendimiento y movimientos juveniles.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Descargar currículum</a>
+          </p>
+      </div>
     </div>
 
     <!-- Skills -->
     <div class="container-fluid bg-3 text-center" id="skills"> 
-      <h1 class="section-title">Skills</h1>
+      <h1 class="section-title">Habilidades</h1>
       <br>
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -134,15 +149,40 @@
     </div>
 
     <!-- Education -->
-    <div class="container-fluid bg-1 text-center" id="education">
-        <h1>Education</h1>
-        <p>My education goes here...</p>
+    <div class="container-fluid bg-3 text-center" id="education">
+      <h1>Educación</h1>
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <ul class="timeline">
+              <li>
+                <h6 class="blue-text text-left">Educación secundaria</h6>
+                <p class="text-left"><b>Junio 2012</b></p>
+                <p class="text-left"><i class="em em-flag-ea"></i> Educación Secundaria Obligatoria (ESO) en el <a href="https://www.murciaeduca.es/iesloscantos/sitio/">IES Los Cantos</a> de Bullas (Murcia).</p>
+              </li> 
+              <li>
+                <h6 class="blue-text text-left">Bachiller Científico</h6>
+                <p class="text-left"><b>Junio 2014</b></p>
+                <p class="text-left"><i class="em em-flag-ea"></i> Bachiller en la rama Científico-Tecnológica en el <a href="https://www.murciaeduca.es/iesloscantos/sitio/">IES Los Cantos</a> de Bullas (Murcia).</p>
+              </li>
+              <li>
+                <h6 class="blue-text text-left">Grado en Ingeniería Informática</h6>
+                <p class="text-left"><b>Septiembre 2014 - Actualidad</b></p>
+                <p class="text-left"><i class="em em-flag-ea"></i> Actualmente cursando el Grado en Ingeniería Informática en la <a href="https://www.um.es/informatica">Facultad de Informática </a> de la <a href="https://www.um.es">Universidad de Murcia.</a></p>
+              </li>
+              <li>
+                <h6 class="blue-text text-left">Computer Science Degree</h6>
+                  <p class="text-left"><b>Septiembre 2018 - Julio 2019</b></p>
+                  <p class="text-left"><i class="em em-flag-pl"></i> Estancia de 10 meses en la <a href="https://www.ife.p.lodz.pl/en/">Politechnika Łódzka</a> de Łódź, Polonia.</p>
+                </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
     <!-- Contact -->
     <div class="container-fluid text-center" id="contact">
-      <h3>Contact</h3>
-      <p>Contact information goes here...</p>
+      <h3>Contacto</h3>
+      <p class="lead">Contact information goes here...</p>
     </div>
 
     <!-- Footer -->

@@ -21,7 +21,7 @@ window.onload = function() {
     /* Inject CSS */
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ffff00}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid yellow}";
     document.body.appendChild(css);
 };
 
@@ -38,7 +38,7 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 150 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
 
