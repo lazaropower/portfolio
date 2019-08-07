@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Lázaro Amor">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Fontawesome icons -->
@@ -17,6 +17,10 @@
     <link rel="icon" href="img/avatar.jpg">
 
     <style>
+      .bg-0 {
+        background-color: #542cb7; /* Purple */
+        color: #ffffff; 
+      }
       .bg-1 {
         background-color: #1abc9c; /* Green */
         color: #ffffff; 
@@ -37,6 +41,15 @@
         padding-top: 70px;
         padding-bottom: 70px;
       }
+
+      .p-typewritter {
+        color: #ffff00; 
+      }
+
+      .section-title {
+        margin-bottom: 80px;
+      }
+
     </style>
     
   </head>
@@ -71,10 +84,16 @@
       </div>
     </nav>
   
-    <div class="container-fluid bg-1 text-center">
+    <div class="container-fluid bg-0 text-center">
       <h2>Who Am I?</h2>
-      <img src="img/avatar.jpg" class="img-responsive rounded-circle" alt="avatar">      
-      <h3>I'm an adventurer</h3>
+      <img src="img/avatar.jpg" class="img-responsive rounded-circle" alt="avatar">   
+      <br><br>
+  
+      <h1>
+          <p class="typewrite text-warning" data-period="2000" data-type='[ "Hi, I am Lázaro Amor.", "I am creative.", "I Love design.", "I Love to develop." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
     </div>
 
     <div class="container-fluid bg-2 text-center">
@@ -87,7 +106,7 @@
 
     <!-- Skills -->
     <div class="container-fluid bg-3 text-center" id="skills"> 
-      <h1>My skills</h1>
+      <h1 class="section-title">Skills</h1>
       <br>
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -134,5 +153,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Typewritter -->
+    <script src="js/typewritter.js"></script>
+
   </body>
 </html>
